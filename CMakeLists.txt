@@ -21,9 +21,7 @@ endif()
 executable(${PROJECT_NAME}
             SOURCES "src/"
             THREADS
-            CONAN_MODULES
-            #BOOST system
-            MODULES pugixml GSL)
+            CONAN_MODULES)
 
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)
 
